@@ -3,8 +3,10 @@ import "./style.css";
 import {
   MdOutlineProductionQuantityLimits,
   MdDashboard,
-  MdOutlineAppRegistration,
+  MdOutlineAppRegistration, MdOutlineReportProblem 
 } from "react-icons/md";
+import { TbReportAnalytics } from "react-icons/tb";
+import { TbReportMedical } from "react-icons/tb";
 
 export default function Sidebar() {
   return (
@@ -32,16 +34,16 @@ export default function Sidebar() {
           </li>
           <li className="nav-item">
             <a href="#relatorios" className="nav-link">
-              <FaUsers className="iconsDash" />
+              <TbReportAnalytics className="iconsDash" />
               Relatórios
             </a>
             <div id="relatorios" className="nav-submenu">
               <a href="/relatorio" className="nav-submenu-link">
-                <FaUsers className="iconsDash" />
+              <TbReportMedical className="iconsDash" />
                 Produtos positivos
               </a>
               <a href="#" className="nav-submenu-link">
-                <FaUsers className="iconsDash" />
+              <MdOutlineReportProblem className="iconsDash" />
                 Produtos negativos</a>
             </div>
           </li>

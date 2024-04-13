@@ -101,9 +101,17 @@ body {
 .imgProduct {
   max-width: 100px;
   max-height: 100px;
-  display: block;
-  margin: auto;
+/*   display: block;
+  margin: auto; */
 }
+
+@media all and (max-width: 767px) {
+
+  .imgProduct {
+    max-width: 25px;
+  }
+}
+
 
 .pagination {
   display: flex;
