@@ -1,4 +1,4 @@
-# Sistema de estoque de rouapas
+# Sistema de estoque de roupas
 
 Bem-vindo ao Sistema de Gerenciamento de estoque! Este é um aplicativo web para ajudar na gestão de inventário de uma empresa ficticia e faz parte do meu inicio a aplicação full stack.
 
