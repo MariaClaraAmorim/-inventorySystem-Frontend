@@ -4,6 +4,7 @@ const Register: React.FC = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [registerError, setRegisterError] = useState<string | null>(null);
+  const [registerSuccess, setRegisterSuccess] = useState<boolean>(false); // Novo estado para controlar o sucesso do registro
 
   const handleRegister = async () => {
     try {
@@ -24,6 +25,7 @@ const Register: React.FC = () => {
       const data = await response.json();
       console.log("Usuário cadastrado com successo!", data);
       // Redirecionar para a página de login, exibir uma mensagem de sucesso, etc.
+      setRegisterSuccess(true); // Definir o estado de sucesso como true
     } catch (error) {
       // Fornecendo um tipo explícito para 'error'
       // Se ocorrer algum erro durante a requisição, lidar com o erro
@@ -66,7 +68,10 @@ const Register: React.FC = () => {
             </a>
           </p>
         </form>
-        {registerError && <p className="register-message">{registerError}</p>}{" "}
+        {registerError && <p className="register-message">{registerError}</p>}
+        {registerSuccess && (
+          <p className="register-message">Usuário cadastrado com sucesso!</p>
+        )}{" "}
       </div>
     </div>
   );
