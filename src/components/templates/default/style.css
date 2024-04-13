@@ -1,0 +1,8 @@
+.wrapper {
+  max-width: 100%;
+  padding: 25px 0 0px 0;
+  height: 100vh;
+  background: #4b79a1;
+  background: -webkit-linear-gradient(to left, #4b79a1, #283e51);
+  background: linear-gradient(to left, #4b79a1, #283e51);
+}

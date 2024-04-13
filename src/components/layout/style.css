@@ -1,0 +1,24 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 10rem;
+}
+
+@media all and (max-width: 767px) {
+  .home {
+    padding: 5rem;
+  }
+}
+button {
+  background: #060552;
+  padding: 15px;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 230px;
+  font-size: large;
+}

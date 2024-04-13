@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-blue: #71b7e6;
+  --main-purple: #9b59b6;
+  --main-grey: #ccc;
+  --sub-grey: #d9d9d9;
+}
+
+.containerCad {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .containerCad {
+    width: 90%;
+  }
+}
+
+.containerCad .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  padding: 5px;
+}
+
+.containerCad .title::before {
+  content: "";
+  position: absolute;
+  height: 3.5px;
+  width: 30px;
+  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  left: 0;
+  bottom: 0;
+}
+
+.containerCad form .detailsForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 0px 0;
+}
+
+form .detailsForm .inputBox {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+
+.detailsForm .inputBox .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+.detailsForm .inputBox input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--main-grey);
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.detailsForm .inputBox input:focus,
+.detailsForm .inputBox input:valid {
+  border-color: var(--main-purple);
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  .btn {
+    float: inline-end;
+  }
+}
+
+form .button {
+  height: 45px;
+  margin: 5px;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  transition: all 0.3s ease;
+}
+
+form .button input:hover {
+  background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
+}
+
+@media only screen and (max-width: 584px) {
+  .containerCad {
+    max-width: 100%;
+  }
+
+  form .detailsForm .inputBox {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .containerCad form .detailsForm {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .detailsForm::-webkit-scrollbar {
+    width: 0;
+  }
+}
