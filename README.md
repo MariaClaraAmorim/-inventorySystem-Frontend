@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# Sistema de estoque de rouapas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao Sistema de Gerenciamento de estoque! Este é um aplicativo web para ajudar na gestão de inventário de uma empresa ficticia e faz parte do meu inicio a aplicação full stack.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Cadastro de novos usuários.
+- Login de usuários.
+- Dashboard.
+- Visualização de inventário.
+- Cadastro de produto.
+- Relatórios.
+- Adição, remoção e edição de itens no inventário (somente para usuários administradores).
+- Etc.
 
-## Expanding the ESLint configuration
+## Acesso ao sistema
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Por padrão, todo novo usuário registrado receberá a role "USER". Para acessar as páginas de administração, utilize as seguintes credenciais:
 
-- Configure the top-level `parserOptions` property like this:
+**Usuário:** Maria Clara Admin  
+**Senha:** maria123
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
