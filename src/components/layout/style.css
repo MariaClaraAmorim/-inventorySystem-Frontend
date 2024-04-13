@@ -14,11 +14,11 @@
 }
 button {
   background: #060552;
-  padding: 15px;
   color: #fff;
   border: 0;
   border-radius: 10px;
   cursor: pointer;
-  width: 230px;
-  font-size: large;
+  /*  width: 230px;
+  padding: 15px;
+  font-size: large; */
 }
